@@ -1,0 +1,22 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-items {
+    border: 1px solid #067aee;
+    border-radius: 0.25rem;
+    display: block;
+    padding: 0.300rem 0.300rem;
+    background-color: white;
+}
+
+.create-btn {
+    min-width: 120px;
+}
+
+.todo_input{
+    flex-basis: 500px;
+    margin: 10px;
+}

@@ -1,0 +1,27 @@
+<ng-template #noTodos>
+  <p style="text-align: center;">No todo-item to showcase</p>
+</ng-template>
+
+<h1>Todo Items </h1>
+
+<ul *ngIf="todoList.length != 0; else noTodos">
+  <li *ngFor="let item of todoList" class="wrapper card">
+    <input
+      type="checkbox"
+      #checkbox
+      (change)="onComplete(checkbox.checked, item)"
+      [checked]="item.completed"
+      class="checkbox"
+      name="item.value"
+      id="item.value"
+    />
+    <label
+      [ngClass]="{
+        complete: checkbox.checked || item.completed
+      }"
+    >
+      {{ item.value }}
+    </label>
+    <button  class="remove-btn" (click)="removeItem(item)">Remove</button>
+  </li>
+</ul>

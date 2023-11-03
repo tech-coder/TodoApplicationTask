@@ -1,0 +1,15 @@
+<div class="wrapper">
+  <input
+    type="text"
+    class="wrapper-items todo_input"
+    name="todos"
+    #addedTodo
+    id="todos"
+  />
+
+  <button class="wrapper-items create-btn" id="addTodo" (click)="addTodos(addedTodo.value)">
+    Add
+  </button>
+</div>
+
+<app-showcase-todos [todo]="todo"></app-showcase-todos>

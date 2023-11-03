@@ -1,0 +1,49 @@
+.todo-checkbox {
+    display: inline-block;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 40px
+}
+
+.card {
+    padding: 20px 20px;
+    margin: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.complete {
+    text-decoration: line-through;
+}
+
+label {
+    width: 30%;
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+.remove-btn {
+    border: 1px solid #000409;
+    border-radius: 0.25rem;
+    background-color: white;
+    display: block;
+    padding: 0.300rem 0.300rem;
+    min-width: 120px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(9, 187, 246);
+}
